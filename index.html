@@ -250,17 +250,23 @@
       💬 WhatsApp: <a href="https://wa.me/918180906815" target="_blank">+91 8180906815</a>
     </div>
 
-    <form onsubmit="handleSubmit(event)">
-      <input type="text" placeholder="Your Name (Optional)" />
-      <input type="email" placeholder="Email or Phone (Required)" required />
-      <select required>
+    <!-- FORM SUBMISSION ENABLED -->
+    <form action="https://formsubmit.co/arvind7kuntal@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Support Request - Break the Bet">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="name" placeholder="Your Name (Optional)" />
+      <input type="text" name="contact" placeholder="Email or Phone (Required)" required />
+
+      <select name="support_type" required>
         <option value="">Type of support you need</option>
         <option>Counseling</option>
         <option>Psychiatric Guidance</option>
         <option>Meetups</option>
         <option>Not Sure</option>
       </select>
-      <textarea placeholder="Share what you're going through (Optional)"></textarea>
+
+      <textarea name="message" placeholder="Share what you're going through (Optional)"></textarea>
       <button type="submit">Request Confidential Support</button>
     </form>
 
@@ -278,13 +284,6 @@
   <p>This platform provides support coordination and guidance. Counseling and psychiatric services are delivered by independent professionals.</p>
   <p>Your privacy, dignity, and confidentiality are our highest priority.</p>
 </footer>
-
-<script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    alert('Thank you for reaching out. We will contact you privately as soon as possible.');
-  }
-</script>
 
 </body>
 </html>
